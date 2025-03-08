@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>粤杨军事夏令营 - 锻造明日领袖</title>
+    <style>
+        :root {
+            --army-green: #4B5320;
+            --camouflage: linear-gradient(45deg, #6B8E23 25%, #556B2F 0, #556B2F 50%, #6B8E23 0, #6B8E23 75%, #556B2F 0);
+        }
+
+        body {
+            font-family: '站酷酷黑', sans-serif;
+            background: #f5f5f5;
+        }
+
+        .header {
+            background: var(--camouflage);
+            height: 80vh;
+            position: relative;
+        }
+
+        .hero-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+
+        .countdown {
+            background: var(--army-green);
+            padding: 20px;
+            color: white;
+            text-align: center;
+        }
+
+        .camp-features {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            padding: 40px;
+        }
+
+        .feature-card {
+            border: 3px solid var(--army-green);
+            padding: 20px;
+            text-align: center;
+            transition: transform 0.3s;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .enroll-btn {
+            background: var(--army-green);
+            color: white;
+            padding: 15px 40px;
+            border: none;
+            font-size: 1.2em;
+            cursor: pointer;
+            margin: 20px auto;
+            display: block;
+        }
+
+        @media (max-width: 768px) {
+            .camp-features {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="hero-text">
+            <h1>2025粤杨军事夏令营</h1>
+            <p>7天6夜全封闭军事化训练</p >
+            <button class="enroll-btn">立即抢占名额</button>
+        </div>
+    </header>
+
+   <div class="countdown">
+           <h3>距第一期开营还有：<span id="timer">120天12:30:15</span></h3>
+       </div>
+   
+       <div class="camp-features">
+           <div class="feature-card">
+               <h3>军事训练体系</h3>
+               <p>战术训练/野外生存/防身术</p >
+           </div>
+           <div class="feature-card">
+               <h3>五星安全保障</h3>
+               <p>1:5师生比/全程保险/医疗组驻场</p >
+           </div>
+           <div class="feature-card">
+               <h3>成长可视系统</h3>
+               <p>每日直播+专属成长档案</p >
+           </div>
+       </div>
+   
+       <!-- 其他模块代码... -->
+   </body>
+   </html>
